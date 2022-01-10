@@ -338,40 +338,7 @@
                     clientlibsJsHead="eds-aem-spa.dependencies">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
-                <policy_spa
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Europe Design System SPA Page Policy"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    clientlibs="[eds-aem-spa.angular]">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                </policy_spa>
             </page>
-            <spa jcr:primaryType="nt:unstructured">
-                <default
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Europe Design System App Policy"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    clientlibs="[eds-aem-spa.angular]"
-                    isRoot="{Boolean}true"
-                    structureDepth="3"
-                />
-            </spa>
         </components>
     </eds-aem-spa>
-    <wcm jcr:primaryType="nt:unstructured">
-        <foundation jcr:primaryType="nt:unstructured">
-            <components jcr:primaryType="nt:unstructured">
-                <responsivegrid jcr:primaryType="nt:unstructured">
-                    <spa-default
-                        jcr:description="Includes only SPA-Enabled components."
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="SPA Content"
-                        sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/eds-aem-spa/components/text]">
-                        <jcr:content jcr:primaryType="nt:unstructured"/>
-                    </spa-default>
-                    </responsivegrid>
-            </components>
-        </foundation>
-    </wcm>
 </jcr:root>
