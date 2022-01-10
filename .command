@@ -1,0 +1,12 @@
+mvn -B archetype:generate \
+ -D archetypeGroupId=com.adobe.aem \
+ -D archetypeArtifactId=aem-project-archetype \
+ -D archetypeVersion=34 \
+ -D appTitle="Europe Design System" \
+ -D appId=eds-aem-spa \
+ -D groupId=com.vanguard.europe \
+ -D aemVersion=6.5.5 \
+ -D language=en \
+ -D country=GB \
+ -D frontendModule=angular \
+ -D includeExamples=y
