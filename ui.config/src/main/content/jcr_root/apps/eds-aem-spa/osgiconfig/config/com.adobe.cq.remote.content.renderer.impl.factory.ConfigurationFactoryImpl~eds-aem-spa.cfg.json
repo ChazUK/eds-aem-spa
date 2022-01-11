@@ -1,0 +1,8 @@
+{
+    "getContentPathPattern": "/content/eds-aem-spa/(.*)|/conf/eds-aem-spa/(.*)/settings/wcm/templates/(.*)",
+    "getRemoteHTMLRendererUrl" : "http://localhost:3233",
+    "getRequestTimeout": 10000,
+    "getAdditionalRequestHeaders": [
+    
+    ]
+}

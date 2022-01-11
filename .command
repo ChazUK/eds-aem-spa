@@ -10,4 +10,5 @@ mvn -B archetype:generate \
  -D country=GB \
  -D frontendModule=angular \
  -D includeExamples=n \
- -D includeDispatcherConfig=n
+ -D includeDispatcherConfig=n \
+ -D enableSSR=y

@@ -19,4 +19,6 @@ export const environment = {
   production: false,
   publicUrl:
     '/etc.clientlibs/eds-aem-spa/clientlibs/clientlib-angular/resources',
+  API_HOST: 'http://localhost:4502',
+  APP_ROOT_PATH: '/content/eds-aem-spa/GB/en'
 };

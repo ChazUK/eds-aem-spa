@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
   
+    "build-server": "ng run angular-app:server",
+    "start-ssr-express": "node dist/server/main.js",
     "start": "ng serve --open --proxy-config ./proxy.conf.json",
     "build": "ng lint && ng build --configuration=aem-develop && clientlib",
     "build:production": "ng lint && ng build --prod && clientlib",
@@ -13,6 +15,13 @@
   },
   "dependencies": {
   
+    "cross-fetch": "^3.1.4",
+    "@angular/platform-server": "~9.1.12",
+    "@nguniversal/express-engine": "^9.1.1",
+    "express-serve-static-core": "^0.1.1",
+    "node-html-parser": "2.0.2",
+    "node-fetch": "^2.6.1",
+    "isomorphic-fetch": "^3.0.0",
     
     "@adobe/aem-angular-editable-components": "^1.2.0",
     "@adobe/aem-spa-component-mapping": "^1.1.1",

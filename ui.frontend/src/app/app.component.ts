@@ -17,8 +17,9 @@
 
 import { ModelManager } from '@adobe/aem-spa-page-model-manager';
 
-import { Constants } from '@adobe/aem-angular-editable-components';
-import { Component } from '@angular/core';
+import { Constants, Utils } from '@adobe/aem-angular-editable-components';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 @Component({
   selector: '#spa-root', // tslint:disable-line
   styleUrls: ['./app.component.css'],
@@ -28,8 +29,19 @@ export class AppComponent {
   items: any;
   itemsOrder: any;
   path: any;
-  constructor() {
-    ModelManager.initialize().then(this.updateData);
+  constructor(@Inject(PLATFORM_ID) private _platformId: object) {
+
+    if(isPlatformBrowser(_platformId)){
+      // for some reason we cannot hydrate on the author, this causes edit mode to break.
+      // @ts-ignore
+      if(!Utils.isInEditor() && window.initialModel){
+        // @ts-ignore
+        ModelManager.initialize({model:window.initialModel});
+      }else{
+        ModelManager.initialize();
+      }
+
+    }
   }
   private updateData = pageModel => {
     this.path = pageModel[Constants.PATH_PROP];
