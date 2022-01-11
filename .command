@@ -9,4 +9,5 @@ mvn -B archetype:generate \
  -D language=en \
  -D country=GB \
  -D frontendModule=angular \
- -D includeExamples=y
+ -D includeExamples=n \
+ -D includeDispatcherConfig=n
