@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 17
+Implementation-Title: Europe Design System - All
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: container
+Content-Package-Id: com.vanguard.europe:eds-aem-app.all:1.0.0-SNAPSHOT
+Content-Package-Description: All content package for Europe Design Syste
+ m
+Content-Package-Roots: /apps/eds-aem-app-packages,/apps/eds-aem-app-vend
+ or-packages
+

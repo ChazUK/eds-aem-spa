@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Europe Design System - All</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="created">2022-01-21T16:38:53.937Z</entry>
+<entry key="groupId">com.vanguard.europe</entry>
+<entry key="name">eds-aem-app.all</entry>
+<entry key="description">All content package for Europe Design System</entry>
+<entry key="artifactId">eds-aem-app.all</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.vanguard.europe</entry>
+</properties>
